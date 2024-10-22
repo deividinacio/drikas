@@ -1,0 +1,10 @@
+Rosa Forte do Logo
+Hex: #700E37
+RGB: 112, 14, 55
+
+Rosa Claro do Logo
+Hex: #DC195B
+RGB: 220, 25, 91
+
+cor da navbar
+background-color: rgba(228, 204, 223, 0.7);
