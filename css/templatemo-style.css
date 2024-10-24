@@ -161,6 +161,11 @@ button:focus { outline: none; }
 	
 }
 
+.preco{
+	font-size: 30px;
+	font-weight: 700;
+}
+
 .cd-hero-slider h2, .cd-hero-slider p {
 	max-width: none;
 	width: 100%;
@@ -212,6 +217,7 @@ button:focus { outline: none; }
     color: white;
     z-index: 1001;
     padding: 0 11px 12px;
+	text-align: center;
 }
 
 .tm-social-icons-container { margin-bottom: 30px; }
@@ -398,6 +404,8 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	display: block;
 	margin: 0 auto;
 	padding: 30px 1px;	
+	text-align:center;
+	
 }
 
 .tm-img {
@@ -585,12 +593,15 @@ figure.effect-ruby:hover img {
 
 /* Media Queries */
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 300px) and (min-width:500px) {
 
 	.img-logo{
 		width: 50px;
 		height: 50px;
 	}
+	.gallery-two .grid-item { width: 50%;}
+	.tm-img-gallery-container-2 {max-width: 906px; margin-top: -600px;}
+	
 } 
 	
 
@@ -602,13 +613,14 @@ figure.effect-ruby:hover img {
 	}
 
 	.grid-item figure figcaption { padding: 2em; }
+	
 
 	
 }
 
 @media only screen and (min-width: 480px) {
-	.cd-full-width .container-fluid { margin-top: -80px; }
-	.cd-hero-slider h2.tm-text-title { font-size: 1.8em; }
+	.cd-full-width .container-fluid { margin-top: -80px;}
+	.cd-hero-slider h2.tm-text-title { font-size: 2.8em;}
 	.tm-textbox-padding { padding: 30px 40px; }
 	.tm-textbox-padding-contact { padding: 30px; }
 	.tm-img-gallery-container { 
@@ -631,8 +643,9 @@ figure.effect-ruby:hover img {
 
 	.tm-img-gallery-info-container {
 		padding: 0 11px 30px;
-		max-width: 700px;
+		/* max-width: 700px; */
 		margin: 0 auto 0 0;
+
 	}
 
 	.grid-item figure figcaption { padding: 1em; }
@@ -645,6 +658,7 @@ figure.effect-ruby:hover img {
 @media only screen and (min-width: 600px) {
 	.tm-footer { padding: 50px 30px 20px; }
 	.tm-copyright-text { width: auto; }
+	
 }
 
 @media only screen and (min-width: 652px) {
