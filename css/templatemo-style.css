@@ -625,11 +625,11 @@ figure.effect-ruby:hover img {
 
 /* Media Queries */
 
-@media only screen and (min-width: 300px) and (max-width:450px) {
+@media only screen and (min-width: 300px) and (min-width: 500px) {
 
 	.img-logo{
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 	}
 	.preco{
 		margin-top: 90%;
@@ -640,7 +640,25 @@ figure.effect-ruby:hover img {
 	.tm-img-gallery-container-2 {max-width: 906px; }
 	
 } 
+
+
+
+
+@media only screen and (min-width: 375px) and (max-width: 500px) {
 	
+	.img-logo{
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 500px) {
+	
+	.img-logo{
+		width: 40px;
+		height: 40px;
+	}
+}
 
 @media only screen and (min-width: 400px) {
 	.cd-hero-slider h2 { font-size: 2em; }
@@ -650,8 +668,6 @@ figure.effect-ruby:hover img {
 	}
 
 	.grid-item figure figcaption { padding: 2em; }
-	
-
 	
 }
 
