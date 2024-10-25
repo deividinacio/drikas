@@ -625,14 +625,19 @@ figure.effect-ruby:hover img {
 
 /* Media Queries */
 
-@media only screen and (min-width: 300px) and (min-width:500px) {
+@media only screen and (min-width: 300px) and (max-width:450px) {
 
 	.img-logo{
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
+	}
+	.preco{
+		margin-top: 90%;
+		font-size: 20px;
+		font-weight: 700;
 	}
 	.gallery-two .grid-item { width: 50%;}
-	.tm-img-gallery-container-2 {max-width: 906px; margin-top: -600px;}
+	.tm-img-gallery-container-2 {max-width: 906px; }
 	
 } 
 	
