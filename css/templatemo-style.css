@@ -107,7 +107,9 @@ button:focus { outline: none; }
 	font-weight: 900;
 	color: #700E37;
 }
+
 /* cor dos links do navbar */
+
 .cd-slider-nav a { text-transform: capitalize; }
 .navbar-nav .nav-item { float: none; }
 .navbar-nav .nav-item+.nav-item { margin-left: 0; }
@@ -410,6 +412,7 @@ textarea { height: 168px; }
 }
 
 /* Gallery */
+
 .grid-item {
 	margin-bottom: 20px;
 	padding-left: 1px;
@@ -623,6 +626,7 @@ figure.effect-ruby:hover img {
 	margin-right: 0;
 }
 
+
 /* Media Queries */
 
 @media only screen and (min-width: 300px) and (min-width: 500px) {
@@ -640,8 +644,6 @@ figure.effect-ruby:hover img {
 	.tm-img-gallery-container-2 {max-width: 906px; }
 	
 } 
-
-
 
 
 @media only screen and (min-width: 375px) and (max-width: 500px) {
