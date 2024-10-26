@@ -141,7 +141,7 @@
 				image: 'effect-halloween/bats.png', // Path to the image.
 				zIndex: 10000, // The z-index you need.
 				amount: 5, // Bat amount.
-				width: 40, //35 Image width.
+				width: 35, // Image width.
 				height: 20, // Animation frame height.
 				frames: 4, // Amount of animation frames.
 				speed: 10, //20 Higher value = faster.
