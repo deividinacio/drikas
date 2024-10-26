@@ -313,14 +313,14 @@ http://www.templatemo.com/tm-497-upper
                                                 <div class="text-xs-left tm-textbox tm-textbox-padding tm-bg-white-translucent tm-3-col-textbox-inner">
                                                     <!-- <i class="fa fa-4x  fa-solid fa-heart-pulse tm-home-fa"></i> -->
                                                      <img class="fa fa-4x tm-home-fa icon-card" src="icons/medal-solid.svg" width="62px">
-                                                    <h2 class="tm-text-title">Com dedicação</h2>
+                                                    <h2 class="tm-text-title">Com <br>dedicação</h2>
                                                     <p class="tm-text">É esforço e determinação, com empenho e coração, cada desafio aprendemos uma nova lição, acreditamos na nossa missão, com trabalho moldamos a ação, assim construimos nossa visão. </p>
                                                 </div>          
                                             </div>
                                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tm-3-col-textbox">
                                                 <div class="text-xs-left tm-textbox tm-textbox-padding tm-bg-white-translucent tm-3-col-textbox-inner">
                                                     <img class="fa fa-4x tm-home-fa icon-card" src="icons/bullseye-solid.svg" width="62px">
-                                                    <h2 class="tm-text-title">Buscamos perfeição</h2>
+                                                    <h2 class="tm-text-title">Buscamos <br>perfeição</h2>
                                                     <p class="tm-text">A arte é nossa direção, em cada detalhe colocamos emoção, cada passo é evolução, em cada produto qualidade sem comparação, a busca pela excelência é a razão, isso reflete nossa paixão.</p>
                                                    
                                                 </div>          
@@ -338,7 +338,7 @@ http://www.templatemo.com/tm-497-upper
             
                 <div class="tm-social-icons-container text-xs-center ">
                     <!-- <a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a> -->
-                    <a href="https://wa.me/5514997746346?text=Olá%20&#128584%20,%20seja%20muito%20bem%20vindo(a)%20ao%20mundo%20@Drika´s%20personalizados&#129392.%20Aqui%20cada%20peça%20é%20um%20sonho%20moldado%20especialmente%20para%20você...&#10083&#128149%20Diga-me%20como%20posso%20lhe%20ajudar?&#129392" class="tm-social-link"><img class="social-style" src="icons/whatsapp-solid.svg" alt="social-whatsapp"></a>
+                    <a href="https://wa.me/5514997746346?text=Olá%20,%20seja%20muito%20bem%20vindo(a)%20ao%20mundo%20@Drika´s%20personalizados.%20Aqui%20cada%20peça%20é%20um%20sonho%20moldado%20especialmente%20para%20você...%20Diga-me%20como%20posso%20lhe%20ajudar%20?" class="tm-social-link" id="send-message"><img class="social-style" src="icons/whatsapp-solid.svg" alt="social-whatsapp"></a>
                     <a href="#" class="tm-social-link"><img class="social-style" src="icons/instagram-solid.svg" alt="social-instagram"></a>
                     <!-- <a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
                     <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
@@ -369,11 +369,32 @@ http://www.templatemo.com/tm-497-upper
         <script src="js/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
         <script src="js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
         
+        
         <script>
+            
+            function checkDevice() { 
+            if( navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            || navigator.userAgent.match(/iPad/i)
+            || navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)
+            ){
+               // return true; // está utilizando celular
+               const selecionaElemento = document.querySelector('#send-message');
+               selecionaElemento.href= "https://wa.me/5514997746346?text=Olá%20&#128584%20,%20seja%20muito%20bem%20vindo(a)%20ao%20mundo%20@Drika´s%20personalizados.%20&#129392%20Aqui%20cada%20peça%20é%20um%20sonho%20moldado%20especialmente%20para%20você...&#10083&#128149%20Diga-me%20como%20posso%20lhe%20ajudar?%20&#129392";
+            }
+
+            }
+
             let pegaDataAtual = new Date();
             let pegaTitle = document.title;
             copy.innerHTML = "Copyright &copy; " + pegaDataAtual.getFullYear() + " " + pegaTitle;
 
+        </script>
+        
+        <script>
             function adjustHeightOfPage(pageNo) {
 
                 var offset = 80;
@@ -414,7 +435,8 @@ http://www.templatemo.com/tm-497-upper
             */
 
             $(window).load(function(){
-
+                
+                checkDevice(); // verifica se é celular
                 adjustHeightOfPage(1); // Adjust page height
 
                 /* Gallery One pop up
