@@ -705,7 +705,7 @@ figure.effect-ruby:hover img {
 
 
 
-@media only screen and (min-width: 375px) and (max-width: 430px){
+@media only screen and (min-width: 375px) {
 	
 	.img-logo{
 		width: 40px;
@@ -713,6 +713,7 @@ figure.effect-ruby:hover img {
 	}
 
 	.grid-item figure figcaption { padding: 2em; margin-top: 80px; }
+	
 	.float-Whats{
 		bottom: 60px;
 	}
@@ -755,7 +756,7 @@ figure.effect-ruby:hover img {
 
 	.tm-img-gallery-info-container {
 		padding: 0 11px 30px;
-		/* max-width: 700px; */
+		 max-width: 700px; 
 		margin: 0 auto 0 0;
 
 	}
